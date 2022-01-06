@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-yt {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    justify-content: center;
+    display: flex;
+}
+
+.form-yt .imgBx {
+    background-image: url(./form-patern.png);
+    display: flex;
+    width: 50%;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-yt .imgBx img {
+    padding: 20px 20px;
+    width: 160px;
+    height: 160px;
+}
+
+.form-yt .imgBx h1 {
+    font-size: 30px;
+    padding: 20px;
+}
+
+.form-yt .imgBx a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.form-yt .imgBx img:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(225deg, #e91e63, #03a9f4);
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
+.form-yt .contentBx {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    /* background-color: #c7dbc4;
+    opacity: 0.4;
+    background-image: repeating-radial-gradient( circle at 0 0, transparent 0, #c7dbc4 12px), repeating-linear-gradient( #51b44755, #51b447); */
+    height: 100%;
+    justify-content: center;
+}
+
+.form-yt .contentBx .formBx {
+    width: 50%;
+}
+
+.form-yt .contentBx .formBx h2 {
+    color: #61482f;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.form-yt .contentBx .formBx .inputBx {
+    margin-bottom: 20px;
+}
+
+.form-yt .contentBx .formBx .inputBx span {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #61482f;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.form-yt .contentBx .formBx .inputBx input {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #51b447;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 30px;
+}
+
+.form-yt .contentBx .formBx .inputBx input[type="submit"] {
+    background: #51b447;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.form-yt .contentBx .formBx .inputBx a {
+    color: #61482f;
+    font-weight: 600;
+}

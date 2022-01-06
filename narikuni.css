@@ -1,0 +1,7 @@
+.header-area .header {
+    background-image: url(./clinic-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 40vh;
+    color: white;
+}

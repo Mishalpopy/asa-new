@@ -1,0 +1,660 @@
+* {
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 0;
+}
+
+
+/*Pre Loader*/
+
+.logo {
+    transform: translate(-50%, -50%);
+}
+
+.logo-cont {
+    padding: 30px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    font-family: 'Titillium Web', sans-serif;
+    border-radius: 50%;
+    background: #00ba69;
+    float: left;
+    margin: 50px 100px;
+}
+
+.logo-cont::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    height: 100%;
+    z-index: -1;
+    border-radius: 50%;
+    border: solid 2px #00ba69;
+    top: 0;
+    left: 0;
+    background: #00ba69;
+    animation: grow 1s 1.5s infinite ease-out;
+}
+
+.logo-cont::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    z-index: -2;
+    border-radius: 50%;
+    border: solid 2px #00ba69;
+    top: 0;
+    left: 0;
+    animation: grow 1s 0.8s infinite ease-out;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    font-family: 'Titillium Web', sans-serif;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banana {
+    padding: 30px;
+    width: 100px;
+    font-family: 'Titillium Web', sans-serif;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+    background: white;
+    float: left;
+    margin: 50px 100px;
+}
+
+.banana::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    height: 100%;
+    z-index: -1;
+    border-radius: 50%;
+    border: solid 2px #00ba69;
+    top: 0;
+    left: 0;
+    animation: grow 1s infinite ease-in-out;
+}
+
+.banana::after {
+    content: "";
+    font-family: 'Titillium Web', sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    border-radius: 50%;
+    border: solid 2px #00ba69;
+    top: 0;
+    left: 0;
+    animation: grow 1s 0.5s infinite ease-in-out;
+}
+
+.b::before {
+    animation: grow 1s infinite alternate ease-in-out;
+}
+
+.b::after {
+    animation: grow 1s 0.5s infinite alternate ease-in-out;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.c::before {
+    background: #00ba69;
+    animation: grow 1.5s infinite ease-out;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.c::after {
+    font-family: 'Titillium Web', sans-serif;
+    animation: grow 2s 0.5s infinite ease-out;
+}
+
+.d {
+    background: transparent;
+}
+
+.d::before {
+    border: 2px dotted #00ba69;
+    font-family: 'Titillium Web', sans-serif;
+    border-bottom: 4px solid #00ba69;
+    border-top: 4px solid #00ba69;
+    animation: spinning 1.5s infinite linear;
+}
+
+.d::after {
+    animation: grow 2s 0.5s infinite ease-out;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.e::before {
+    background: #00ba69;
+    animation: grow 1s infinite ease-out;
+}
+
+.e::after {
+    animation: grow 1s 0.5s infinite ease-out;
+}
+
+.f::before {
+    background: #00ba69;
+    animation: grow 1s 1.5s infinite ease-out;
+}
+
+.f::after {
+    animation: grow 1s 0.8s infinite ease-out;
+}
+
+@keyframes spinning {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+.navbar-area .container {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    font-family: 'Titillium Web', sans-serif;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+.floating-button0 {
+    text-decoration: none;
+    display: inline-block;
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    margin: 10px 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .6s;
+}
+
+.floating-button0:hover {
+    background: #e52ed6;
+    box-shadow: 0 15px 20px rgba(229, 46, 189, 0.4);
+    color: white;
+    transform: translateY(-5px);
+}
+
+* {
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 0;
+}
+
+
+/*Description Area*/
+
+.description {
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 50vh;
+}
+
+.description .container {
+    position: relative;
+    background: rgb(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(36, 24, 24, 0.2);
+    border-radius: 15px;
+    display: flex;
+    font-family: 'Titillium Web', sans-serif;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.description .container img {
+    width: 100%;
+    padding: 20px 20px;
+    height: 100%;
+}
+
+
+/*Doctor Area*/
+
+.doctor-area {
+    position: relative;
+    background-color: #1a733b;
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 50vh;
+}
+
+.doctor-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(#f00, #f0f);
+    clip-path: circle(30% at right 70%); */
+}
+
+.doctor-area::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(#2196f3, #e91e63);
+    clip-path: circle(20% at 10% 10%); */
+}
+
+.doctor-area .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    font-family: 'Titillium Web', sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.doctor-area .container .card {
+    font-family: 'Titillium Web', sans-serif;
+    position: relative;
+    width: 300px;
+    height: 325px;
+    background: rgb(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(36, 24, 24, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.doctor-area .container .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    transition: 0.5%;
+}
+
+.doctor-area .container .card:hover .content {
+    opacity: 1;
+}
+
+.doctor-area .container .card .content .imgBx {
+    position: relative;
+    width: 150px;
+    font-family: 'Titillium Web', sans-serif;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.25);
+}
+
+.doctor-area .container .card .content .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.doctor-area .container .card .content .contentBx h3 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.doctor-area .container .card .content .contentBx h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: initial;
+}
+
+.why-asa {
+    position: relative;
+    background-color: #61482f;
+    display: flex;
+    font-family: 'Titillium Web', sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 50vh;
+}
+
+.why-asa .container {
+    position: relative;
+    color: white;
+    background: rgb(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(36, 24, 24, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Titillium Web', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.why-asa .container .icon img {
+    width: 36px;
+}
+
+.why-asa .container {
+    padding: 20px 80px;
+    text-align: center;
+}
+
+.why-asa .container h2 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.why-asa .container .facility-area img {
+    width: 38px;
+}
+
+
+/*facilty*/
+
+.facilty-area {
+    position: relative;
+    background-color: #61482f;
+    display: flex;
+    justify-content: center;
+    font-family: 'Titillium Web', sans-serif;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 50vh;
+}
+
+.facilty-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgb(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(36, 24, 24, 0.2); */
+    backdrop-filter: blur(10px);
+    clip-path: circle(30% at right 70%);
+}
+
+.facilty-area::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(36, 24, 24, 0.2);
+    backdrop-filter: blur(10px);
+    clip-path: circle(20% at 10% 10%);
+}
+
+.facilty-area .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.facilty-area .container .card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: rgb(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(36, 24, 24, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.facilty-area .container .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    transition: 0.5%;
+}
+
+.facilty-area .container .card:hover .content {
+    opacity: 1;
+}
+
+.facilty-area .container .card .content .imgBx {
+    position: relative;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+}
+
+.facilty-area .container .card .content .imgBx img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.facilty-area .container .card .content .contentBx h3 {
+    color: white;
+    text-transform: uppercase;
+    /* letter-spacing: 2px; */
+    font-weight: 500;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.facilty-area .container .card .content .contentBx h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: initial;
+}
+
+
+/*treatment*/
+
+.treatment-area {
+    position: relative;
+    background-color: #61482f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 50vh;
+}
+
+.treatment-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(36, 24, 24, 0.2);
+    backdrop-filter: blur(10px);
+    /* clip-path: circle(30% at right 70%); */
+    clip-path: circle(20% at right 70%);
+}
+
+.treatment-area::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgb(255, 255, 255, 0.05); */
+    box-shadow: 0 15px 35px rgba(36, 24, 24, 0.2);
+    backdrop-filter: blur(10px);
+    clip-path: circle(20% at 10% 10%);
+}
+
+.treatment-area .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.treatment-area .container .card {
+    position: relative;
+    width: 225px;
+    height: 200px;
+    background: rgb(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(36, 24, 24, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.treatment-area .container .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    transition: 0.5%;
+}
+
+.treatment-area .container .card:hover .content {
+    opacity: 1;
+}
+
+.treatment-area .container .card .content .imgBx {
+    position: relative;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+}
+
+.treatment-area .container .card .content .imgBx img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.treatment-area .container .card .content .contentBx h3 {
+    color: white;
+    text-transform: uppercase;
+    /* letter-spacing: 2px; */
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.treatment-area .container .card .content .contentBx h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: initial;
+}
+
+.clinic-description {
+    /* background-image: url(./clinic-bg.jpeg); */
+    margin-top: 77px;
+    text-align: center;
+}
+
+.clinic-description p {
+    text-align: center;
+}

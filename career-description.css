@@ -1,0 +1,61 @@
+.career-des-bg {
+    background-image: url(./career-des-bg.png);
+    /* background-position: 50% 0px; */
+    padding: 200px 0 100px;
+    background-attachment: fixed;
+    /* background-position: 50% 0; */
+    /* background-size: cover; */
+}
+
+.career-des-bg .container {
+    text-align: center;
+}
+
+.section-padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.job-list-details .job-details-head {
+    position: relative;
+    z-index: 1;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.job-list-details .job-details-head .salary-type {
+    text-align: right;
+}
+
+a,
+button {
+    line-height: inherit;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.job-list-details .job-details-head .salary-type {
+    text-align: right;
+}
+
+.job-list-details .job-details-head .content .meta {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    color: #6b6b6b;
+}

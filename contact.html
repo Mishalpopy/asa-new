@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contact-us-sec {
+            background: #51b447;
+        }
+        
+        .contact-us-sec form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #040c03;
+            padding: 100px;
+        }
+        
+        .contact-us-sec label {
+            font-family: sans-serif;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            font-size: .8em;
+            color: #FFF;
+        }
+        
+        .contact-us-sec input[type=text] {
+            display: inline-block;
+            border: none;
+            text-align: left;
+            box-shadow: 3px 2px #52b447ad;
+            padding: 10px;
+            width: 350px;
+            margin: 10px 0;
+            background: transparent;
+            color: #FFF;
+        }
+        
+        .contact-us-sec input[type=text]:focus {
+            background: none;
+            border: none;
+            color: #FFF;
+        }
+        
+        .contact-us-sec button {
+            background: transparent;
+            color: #FFF;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 20px 0;
+            padding: 10px 30px;
+            border: 2px solid #FFF;
+        }
+        
+        .contact-us-sec button:hover {
+            background: transparent;
+            border: 2px solid #082005;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="contact-us-sec">
+        <form>
+            <label> First Name: </label> <br>
+            <input type="text" placeholder="" /> <br>
+            <label> Phone Number: </label> </br>
+            <input type="text" placeholder="" /><br>
+            <label> Your Location: </label> </br>
+            <input type="text" placeholder="" />
+            <br>
+            <button> Submit </button>
+        </form>
+    </section>
+
+    <script>
+        $('input').on('focusin', function() {
+            $(this).parent().find('label').addClass('active');
+        });
+
+        $('input').on('focusout', function() {
+            if (!this.value) {
+                $(this).parent().find('label').removeClass('active');
+            }
+        });
+    </script>
+</body>
+<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+
+</html>

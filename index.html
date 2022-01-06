@@ -1,0 +1,1298 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/remixicon.css">
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/selectize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="preloader.css">
+    <link rel="stylesheet" href="message-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>ASA clinics</title>
+    <link rel="icon" type="image/png" href="fav-icon.png">
+
+
+
+
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            width;
+            100%;
+            margin: 0;
+            padding;
+            0;
+        }
+        
+        .wrap {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            background: #120103;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .animate__animated .animate__backInRight {
+            --animate-duration: 1800ms;
+            --animate-delay: 5.9s;
+        }
+        
+        header {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 900;
+            width: 100%;
+        }
+        
+        header label {
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            line-height: 2.25em;
+            font-size: 1em;
+            font-weight: bold;
+            padding: 0 1em;
+        }
+        
+        header label:hover {
+            background: #50b848;
+            border-radius: 20px;
+        }
+        
+        .slide {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            z-index: 10;
+            padding: 8em 1em 0;
+            background-color: #120103;
+            background-position: 50% 50%;
+            background-size: cover;
+            transition: left 0s 0.75s;
+        }
+        
+        .slide-one {
+            background-image: url(./001-bg.jpg);
+        }
+        
+        .slide-two {
+            background-image: url(./Pharmacy.jpg);
+        }
+        
+        .slide-three {
+            background-image: url(./Clinic.jpg);
+        }
+        
+        .slide-four {
+            background-image: url(./Staff.jpg);
+        }
+        
+        [id^="slide"]:checked+.slide {
+            left: 0;
+            z-index: 100;
+            transition: left 0.65s ease-out;
+        }
+        
+        .slide h1 {
+            opacity: 0;
+            transform: translateY(100%);
+            transition: transform 0.5s 0.5s, opacity 0.5s;
+        }
+        
+        [id^="slide"]:checked+.slide h1 {
+            opacity: 1;
+            font-family: 'Titillium Web', sans-serif;
+            transform: translateY(0);
+            transition: all 0.5s 0.5s;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+    <div class="preloader">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="lds-spinner">
+
+                    <div class="banana d">
+                        <img src="pre-logo.png" alt="">
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="navbar-area fixed-top" style="background-color: white;">
+        <div class="main-responsive-nav">
+            <div class="container">
+                <div class="main-responsive-menu">
+                    <div class="logo">
+                        <a href="#">
+                            <a href="# "><img src="logo.svg" alt="Ocularis" width="200" height="56"></a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-navbar">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="logo-dark.png" width="80%" alt="logo">
+                    </a>
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent ">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link active">
+                                    Home
+                                   
+                                </a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="clinic.html" class="nav-link">
+                                    Clinics 
+                                  
+                                </a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="index-test.html" class="nav-link">Clinic One</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="index-test.html" class="nav-link">Clinic Two</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="index-test.html" class="nav-link">Clinic Three</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="index-test.html" class="nav-link">Clinic Four</a>
+                                    </li>
+
+
+                                </ul> -->
+                            </li>
+                            <li class="nav-item">
+                                <a href="gallery.html" class="nav-link">
+                                   Gallery
+                                    <!-- <i class="ri-arrow-down-s-line"></i> -->
+                                </a>
+
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="career.html" class="nav-link">
+                                   Career
+                                    <!-- <i class="ri-arrow-down-s-line"></i> -->
+                                </a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                   Blog
+                                    <!-- <i class="ri-arrow-down-s-line"></i> -->
+                                </a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Franchise
+                                    <!-- <i class="ri-arrow-down-s-line"></i> -->
+                                </a>
+
+                            </li>
+
+
+
+                        </ul>
+                        <div class="others-options d-flex align-items-center">
+                            <div class="option-item">
+                                <div class="call-info" style="padding: 20px;">
+                                    <i class="ri-phone-line"></i>
+                                    <a href="#">+91 9107 050 050
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <div class="option-item">
+                                <a href="#" class="default-btn">Contact Us</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="others-option-for-responsive">
+            <div class="container">
+                <div class="dot-menu">
+                    <div class="inner">
+                        <div class="circle circle-one"></div>
+                        <div class="circle circle-two"></div>
+                        <div class="circle circle-three"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="option-inner">
+                        <div class="others-options d-flex align-items-center">
+                            <div class="option-item">
+                                <div class="call-info">
+                                    <i class="ri-phone-line"></i>
+                                    <a href="#">+91  9846 33 89 00</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrap">
+        <header>
+            <label for="slide-1-trigger"><span class="iconify" data-icon="carbon:dot-mark" style="color: #61482f;"></span></label>
+            <label for="slide-2-trigger"><span class="iconify" data-icon="carbon:dot-mark" style="color: #61482f"></span></label>
+            <label for="slide-3-trigger"><span class="iconify" data-icon="carbon:dot-mark" style="color: #61482f"></span></label>
+            <label for="slide-4-trigger"><span class="iconify" data-icon="carbon:dot-mark" style="color: #61482f"></span></label>
+        </header>
+        <input id="slide-1-trigger" type="radio" name="slides" checked>
+        <section class="slide slide-one">
+            <div class="col-lg-5 col-md-12">
+                <div class="main-banner-content-with-search" data-speed="0.06" data-revert="true">
+
+                    <h1 class="animate__animated animate__backInRight" data-aos="fade-right" data-aos-delay="70" data-aos-duration="700">Welcome to <br><span style="font-size: 100px; font-family: 'Titillium Web', sans-serif;">ASA Clinics</span>
+                    </h1>
+                    <p data-aos="fade-up" data-aos-delay="80" data-aos-duration="800" style="color: rgb(255, 255, 255);">ASA Clinics is a pioneering group of visionaries promoting authentic, natural health systems deeply embodied in tradition within the spirit of nature.
+                    </p>
+                    <!-- <form class="banner-search-form" data-aos="fade-up" data-aos-delay="90" data-aos-duration="900">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label><i class="ri-nurse-line"></i></label>
+                                    <input class="form-control" type="text" placeholder="Doctor">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group border-right">
+                                    <label><i class="ri-map-pin-range-line"></i></label>
+                                    <input class="form-control" type="text" placeholder="City or Zip Code">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-btn">
+                            <button type="submit" class="default-btn"><i class="ri-search-line"></i> Search</button>
+                        </div>
+                    </form> -->
+                    <div class="banner-bottom-text" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500">
+                        <div class="option-item">
+                            <a href="#" class="slider-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <input id="slide-2-trigger" type="radio" name="slides">
+        <section class="slide slide-two">
+            <div class="col-lg-5 col-md-12">
+                <div class="main-banner-content-with-search" data-speed="0.06" data-revert="true">
+
+                    <h1 data-aos="fade-right" data-aos-delay="70" data-aos-duration="700" style="font-family: 'Titillium Web', sans-serif;">World Class<br><span style="font-size: 100px; font-family: 'Titillium Web', sans-serif;">Pharmacy</span>
+                    </h1>
+                    <p data-aos="fade-up " data-aos-delay="80 " data-aos-duration="800 " style="color: white;">ASA Clinics is a pioneering group of visionaries promoting authentic, natural health systems deeply embodied in tradition within the spirit of nature.
+                    </p>
+                    <!-- <form class="banner-search-form " data-aos="fade-up " data-aos-delay="90 " data-aos-duration="900 ">
+                        <div class="row ">
+                            <div class="col-lg-6 col-md-6 ">
+                                <div class="form-group ">
+                                    <label><i class="ri-nurse-line "></i></label>
+                                    <input class="form-control " type="text " placeholder="Doctor ">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 ">
+                                <div class="form-group border-right ">
+                                    <label><i class="ri-map-pin-range-line "></i></label>
+                                    <input class="form-control " type="text " placeholder="City or Zip Code ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-btn ">
+                            <button type="submit " class="default-btn "><i class="ri-search-line "></i> Search</button>
+                        </div>
+                    </form> -->
+                    <div class="banner-bottom-text " data-aos="fade-up " data-aos-delay="50 " data-aos-duration="500 ">
+                        <div class="option-item ">
+                            <a href="# " class="default-btn ">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <input id="slide-3-trigger " type="radio " name="slides ">
+        <section class="slide slide-three ">
+            <div class="col-lg-5 col-md-12 ">
+                <div class="main-banner-content-with-search " data-speed="0.06 " data-revert="true ">
+
+                    <h1 data-aos="fade-right " data-aos-delay="70 " data-aos-duration="700 ">Welcome to <br><span style="font-size: 100px; ">ASA Clinics</span>
+                    </h1>
+                    <p data-aos="fade-up " data-aos-delay="80 " data-aos-duration="800 ">ASA Clinics is a pioneering group of visionaries promoting authentic, natural health systems deeply embodied in tradition within the spirit of nature.
+                    </p>
+                    <!-- <form class="banner-search-form " data-aos="fade-up " data-aos-delay="90 " data-aos-duration="900 ">
+                        <div class="row ">
+                            <div class="col-lg-6 col-md-6 ">
+                                <div class="form-group ">
+                                    <label><i class="ri-nurse-line "></i></label>
+                                    <input class="form-control " type="text " placeholder="Doctor ">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 ">
+                                <div class="form-group border-right ">
+                                    <label><i class="ri-map-pin-range-line "></i></label>
+                                    <input class="form-control " type="text " placeholder="City or Zip Code ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-btn ">
+                            <button type="submit " class="default-btn "><i class="ri-search-line "></i> Search</button>
+                        </div>
+                    </form> -->
+                    <div class="banner-bottom-text " data-aos="fade-up " data-aos-delay="50 " data-aos-duration="500 ">
+                        <div class="option-item ">
+                            <a href="# " class="default-btn ">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <input id="slide-4-trigger " type="radio " name="slides ">
+        <section class="slide slide-four ">
+            <div class="col-lg-5 col-md-12 ">
+                <div class="main-banner-content-with-search " data-speed="0.06 " data-revert="true ">
+
+                    <h1 data-aos="fade-right " data-aos-delay="70 " data-aos-duration="700 ">Welcome to <br><span style="font-size: 100px; ">ASA Clinics</span>
+                    </h1>
+                    <p data-aos="fade-up " data-aos-delay="80 " data-aos-duration="800 ">ASA Clinic is a pioneering group of visionaries promoting authentic, natural health systems deeply embodied in tradition within the spirit of nature.
+                    </p>
+                    <!-- <form class="banner-search-form " data-aos="fade-up " data-aos-delay="90 " data-aos-duration="900 ">
+                        <div class="row ">
+                            <div class="col-lg-6 col-md-6 ">
+                                <div class="form-group ">
+                                    <label><i class="ri-nurse-line "></i></label>
+                                    <input class="form-control " type="text " placeholder="Doctor ">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 ">
+                                <div class="form-group border-right ">
+                                    <label><i class="ri-map-pin-range-line "></i></label>
+                                    <input class="form-control " type="text " placeholder="City or Zip Code ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-btn ">
+                            <button type="submit " class="default-btn "><i class="ri-search-line "></i> Search</button>
+                        </div>
+                    </form> -->
+                    <div class="banner-bottom-text " data-aos="fade-up " data-aos-delay="50 " data-aos-duration="500 ">
+                        <div class="option-item ">
+                            <a href="# " class="default-btn ">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="easy-solutions-area pt-100 pb-50 " id="why-asa ">
+        <div class="container ">
+            <div class="section-title ">
+                <!-- <span>ASA CLINIC</span> -->
+                <h2 style="padding-bottom: 10px;">Why ASA Clinics?</h2>
+                <p style="padding-bottom: 24px;">ASA clinics is a paradigm space with contemporary apparatus done in a colloquial way. Never is it going back to primitive means, Rather is an advancement of insightful thoughts that anticipated safer living in the hands of nature. Where
+                    else would you feel secure and healthy, if not in the green ambit? It has dawned upon ASA clinics to not limit the thought of health into mere treatment. We understand and so we preach that an ethical and moral lifestyle has a lot
+                    to do with good health. A fit body that carries a wondrous mind with a pretty soul is our idea of a human being. ASA Clinics is the rare space that layout the need of such species around to make this land a better home. We choose Unani,
+                    Ayurveda and other systems of natural medicine as its means. The frames by their herbal colours with all their shades are ready to sketch the best out of you.
+                </p>
+            </div>
+            <div class="row justify-content-center " style="text-align: center; ">
+                <div class="col-lg-4 col-md-6 col-sm-6 ">
+                    <div class="single-solutions-card" style="padding: 20px 23px; ">
+                        <div class="icon ">
+                            <img src="Image\New folder\natural medicine.svg " class="ri-user-search-line " alt=" ">
+                        </div>
+                        <h3>
+                            <a href="# ">NATURAL
+                                MEDICARE</a>
+                        </h3>
+                        <p style="text-align: justify; line-height: 24px; padding-top: 27px;  font-size: 15px;">The ostensible touch of nature is now reachable under one single roof. ASA Clinics are satellite clinics that provide the twin treatment options of Unani and Ayurveda in various towns and cities around.
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="col-lg-4 col-md-6 col-sm-6 ">
+                    <div class="single-solutions-card ">
+                        <div class="icon ">
+                            <img src="Image\New folder\unani.svg " class="ri-user-search-line " alt=" ">
+                        </div>
+                        <h3>
+                            <a href="# ">UNANI TREATMENT</a>
+                        </h3>
+                        <p style="text-align: justify; line-height: 24px; padding-top: 27px;  font-size: 15px;">Treating just the disease is child play. We prefer tuning daily habits for lifestyles decides the living. From Greece to then Arabic- Persian spheres, the Unani system has a long history of curing. Based on the Humoral Theory,
+                            the Unani system of medicine which is traditional in nature is practised in South Asia </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 ">
+                    <div class="single-solutions-card ">
+                        <div class="icon ">
+                            <img src="Image\New folder\universal medicine.svg " class="ri-user-search-line " alt=" ">
+                        </div>
+                        <h3>
+                            <a href="# ">UNIVERSAL MEDICINE
+                             </a>
+                        </h3>
+                        <p style="text-align: justify; line-height: 24px; padding-top: 27px; font-size: 15px;">Every soul counts. This temperament of each of you needs to be served incompatible forms. With the extensive use of various science disciplines, this health care delivery system is an integrated form of revered living habits.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 
+    <section class="message-dr ">
+        <div class="container " style="align-items: center; ">
+            <div class="row ">
+                <div class="col-lg-6 col-md-12 " style="background-image: url(./asdsAsset\ 2.png); background-repeat: no-repeat; background-size: 650px 650px; ">
+
+                    <img src="Image\Doctor-brown.png " style="max-width: 50%; " alt=" ">
+
+                </div>
+                <div class="col-lg-6 col-md-12 ">
+                    <div class="why-choose-content ">
+                        <span>MESSAGE</span>
+                        <h3>FROM THE DIRECTORS DESK</h3>
+                        <p>The Imtibish mission is to take unani based holistic wellness to the modern public in a widely accessible way were building a host of instructions such as wellness centers, hospital, clinics, educational & training centers, research
+                            center and modern manufacturing units for herbals medicines this is augmented by initiatives such as periodical & academic publications health – club and digital channels besides keeping people healthy Imtibish also believes
+                            in the importance of an ethical and moral lifestyle as an essential complement to good health.</p>
+
+                        <div class="why-choose-btn ">
+                            <a href="# " class="default-btn ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <div class="why-choose-area ptb-100 ">
+        <div class="container ">
+            <div class="row ">
+
+                <div class="col-lg-4 col-md-12 ">
+                    <div class="why-choose-shape-1 " data-speed="0.08 " data-revert="true ">
+                        <img src="Image\Doctor-brown.png " style="max-width: 80%; " alt=" ">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 ">
+                    <div class="why-choose-content ">
+                        <span>MESSAGE</span>
+                        <h3>FROM THE DIRECTORS DESK</h3>
+                        <p>The Imtibish mission is to take unani based holistic wellness to the modern public in a widely accessible way were building a host of instructions such as wellness centers, hospital, clinics, educational & training centers, research
+                            center and modern manufacturing units for herbals medicines this is augmented by initiatives such as periodical & academic publications health – club and digital channels besides keeping people healthy Imtibish also believes
+                            in the importance of an ethical and moral lifestyle as an essential complement to good health.</p>
+
+                        <div class="why-choose-btn ">
+                            <a href="# " class="default-btn ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="why-choose-shape-2 " data-speed="0.08 " data-revert="true ">
+
+        </div>
+    </div> -->
+
+
+
+    <section class="director-msg" style="padding-top: 50px; background-color: whitesmoke;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-4" style="align-items: center;
+                justify-content: center;
+                display: flex;">
+                    <div class="slideshow-container">
+
+
+                        <div class="mySlides fade">
+
+                            <img src="doctor-1.png" style="width:100%">
+                            <div class="text">
+                                <h4>Dr Hafiz U.K Muhammed Shareef</h4>
+                                <span>Director, ASA Clinics</span>
+                            </div>
+                        </div>
+
+                        <div class="mySlides fade">
+
+                            <img src="doctor-2.png" style="width:100%">
+                            <div class="text">
+                                <h4>Dr. A.P. Shahul Hameed</h4>
+                                <span>Director, ASA Clinics</span>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-8">
+                    <div class="contentBox">
+
+                        <div class="contenttx">
+                            <h2>FROM THE DIRECTORS DESK</h2>
+                            <p>he Imtibish mission is to take unani based holistic wellness to the modern public in a widely accessible way were building a host of instructions such as wellness centers, hospital, clinics, educational & training centers,
+                                research center and modern manufacturing units for herbals medicines this is augmented by initiatives such as periodical & academic publications health – club and digital channels besides keeping people healthy Imtibish
+                                also believes in the importance of an ethical and moral lifestyle as an essential complement to good health.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="services-area  pb-75 ">
+        <div class="container ">
+            <div class="section-title ">
+
+                <h2>ASA Clinics Facilities</h2>
+            </div>
+            <div class="row justify-content-center ">
+                <div class="col-lg-4 col-md-4 col-sm-6 ">
+                    <div class="single-services-card ">
+                        <div class="image ">
+                            <img src="Image\consultation.svg " alt="image ">
+                        </div>
+                        <div class="content ">
+                            <h3>
+                                <a href="# ">Consulting Room</a>
+                            </h3>
+                            <p>Our Consultation facility is always open 7 days a week with some of the best doctors to cure you. More content for Consultation room to go here.
+                            </p>
+                            <!-- <a href="# " class="services-btn ">Learn More</a> -->
+                        </div>
+                        <div class="services-shape-1 ">
+                            <img src="assets/images/services/shape-1.png " alt="image ">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 ">
+                    <div class="single-services-card ">
+                        <div class="image ">
+                            <img src="Image\pharmacy.svg " alt="image ">
+                        </div>
+                        <div class="content ">
+                            <h3>
+                                <a href="# ">Pharmacy
+                                </a>
+                            </h3>
+                            <p>ASA Clinics has got its own designated pharmacy to give you the accurate medicine. More content for ASA pharmacy to go here.
+                            </p>
+                            <!-- <a href="# " class="services-btn ">Learn More</a> -->
+                        </div>
+                        <div class="services-shape-1 ">
+                            <img src="assets/images/services/shape-1.png " alt="image ">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 ">
+                    <div class="single-services-card ">
+                        <div class="image ">
+                            <img src="Image\laboratory.svg " alt="image ">
+                        </div>
+                        <div class="content ">
+                            <h3>
+                                <a href="# ">Laboratary</a>
+                            </h3>
+                            <p>All our Clinics has Laboratory facility to do basic and advanced health checkup for the doctors to give you the best care.
+
+                            </p>
+                            <!-- <a href="# " class="services-btn ">Learn More</a> -->
+                        </div>
+                        <div class="services-shape-1 ">
+                            <img src="assets/images/services/shape-1.png " alt="image ">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 ">
+                    <div class="single-services-card ">
+                        <div class="image ">
+                            <img src="Image\physiotheraphy.svg " alt="image ">
+                        </div>
+                        <div class="content ">
+                            <h3>
+                                <a href="# ">Physiotherapy</a>
+                            </h3>
+                            <p>Our Physiotherapy and Rehabilitation department has the best team to regain and rebuild your physical abilities. With the help of advanced technics and technology, ASA Clinics Physic therapy team is here to help you.
+                            </p>
+                            <!-- <a href="# " class="services-btn ">Learn More</a> -->
+                        </div>
+                        <div class="services-shape-1 ">
+                            <img src="assets/images/services/shape-1.png " alt="image ">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 ">
+                    <div class="single-services-card ">
+                        <div class="image ">
+                            <img src="Image\cupping (2).svg " alt="image ">
+                        </div>
+                        <div class="content ">
+                            <h3>
+                                <a href="# ">Hijama Room</a>
+                            </h3>
+                            <p>One of the important treatment methods in Unani Medicine consist of Hijama therapy and All our ASA Clinics are equipped with Hijama therapy centre both for male and female separately.
+                            </p>
+                            <!-- <a href="# " class="services-btn ">Learn More</a> -->
+                        </div>
+                        <div class="services-shape-1 ">
+                            <img src="assets/images/services/shape-1.png " alt="image ">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 ">
+                    <div class="single-services-card ">
+                        <div class="image ">
+                            <img src="Image\ward (2).svg " alt="image ">
+                        </div>
+                        <div class="content ">
+                            <h3>
+                                <a href="# ">Wards</a>
+                            </h3>
+                            <p>All our Clinics have separate wards for Male and female OP patients. Trained Nurses and best house keeping maintain the ward with standards.
+                            </p>
+                            <!-- <a href="# " class="services-btn ">Learn More</a> -->
+                        </div>
+                        <div class="services-shape-1 ">
+                            <img src="assets/images/services/shape-1.png " alt="image ">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="healthcare-doctor-area ptb-100 ">
+        <div class="container ">
+            <div class="row align-items-center ">
+                <div class="col-lg-6 col-md-12 ">
+                    <div class="healthcare-doctor-content " data-speed="0.05 " data-revert="true ">
+                        <span>Quality Healthcare</span>
+                        <h3>Have Certified and High Quality Doctor For You</h3>
+                        <p>Our medical clinic provides quality care for the entire family while maintaining a personable atmosphere best services. Our medical clinic provides quality. Our medical clinic provides quality care for the entire family while maintaining
+                            lizam a personable atmosphere best services. Our medical clinic provides.</p>
+                        <div class="healthcare-btn ">
+                            <a href="# " class="default-btn ">Book Appointment</a>
+                        </div>
+                        <div class="healthcare-stethoscope ">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 ">
+                    <div class="healthcare-doctor-image " data-speed="0.05 " data-revert="true ">
+                        <img src="assets/images/healthcare-doctor/doctor-1.png " alt="image ">
+                        <div class="circle-pattern "></div>
+                        <div class="healthcare-card-content ">
+                            <div class="icon ">
+                                <i class="ri-medal-2-line "></i>
+                            </div>
+                            <h3>Certified Doctor</h3>
+                            <p>Proin gravida nibh vel velit auctor aliquet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="professional-doctors-area ptb-100 ">
+        <div class="container ">
+            <div class="section-title ">
+
+                <h2 style="color: #61482f; ">Our Expert Team</h2>
+            </div>
+            <div class="professional-doctors-slides owl-carousel owl-theme ">
+                <div class="professional-doctors-card ">
+                    <div class="doctors-image ">
+                        <a href="# "><img src="assets/images/doctors/doctor-1.png " alt="image "></a>
+                        <div class="add-icon ">
+                            <a href="# "></a>
+                        </div>
+
+                    </div>
+                    <div class="doctors-content ">
+                        <span>Director, ASA Clinics</span>
+                        <!-- <h3>
+                            <a href="# ">Dr Hafiz U.K</a>
+                            <a href="# ">+91 8111 85 29 56</a>
+                            <a href="# ">c.mishal46@gmail.com</a>
+                        </h3> -->
+                    </div>
+                </div>
+                <div class="professional-doctors-card ">
+                    <div class="doctors-image bg-f7f7f7 ">
+                        <a href="# "><img src="assets/images/doctors/doctor-2.png " alt="image "></a>
+                        <div class="add-icon ">
+                            <a href="# "></a>
+                        </div>
+
+                    </div>
+                    <div class="doctors-content ">
+                        <span>Director, ASA Clinics</span>
+                        <!-- <h3>
+                            <a href="doctors-details.html ">Dr Shahul Hameed</a>
+                            <a href="# ">+91 8111 85 29 56</a>
+                            <a href="# ">c.mishal46@gmail.com</a>
+                        </h3> -->
+                    </div>
+                </div>
+                <div class="professional-doctors-card ">
+                    <div class="doctors-image ">
+                        <a href="doctors-details.html "><img src="assets/images/doctors/doctor-1.png " alt="image "></a>
+                        <div class="add-icon ">
+                            <a href="doctors-details.html "></a>
+                        </div>
+
+                    </div>
+                    <div class="doctors-content ">
+                        <span>Director, ASA Clinics</span>
+                        <!-- <h3>
+                            <a href="# ">Dr Hafiz U.K</a>
+                            <a href="# ">+91 8111 85 29 56</a>
+                            <a href="# ">c.mishal46@gmail.com</a>
+                        </h3> -->
+                    </div>
+                </div>
+                <div class="professional-doctors-card ">
+                    <div class="doctors-image bg-f7f7f7 ">
+                        <a href="# "><img src="assets/images/doctors/doctor-2.png " alt="image "></a>
+                        <div class="add-icon ">
+                            <a href="# "></a>
+                        </div>
+
+                    </div>
+                    <div class="doctors-content ">
+                        <span>Director, ASA Clinics</span>
+                        <!-- <h3>
+                            <a href="# ">Dr Shahul Hameed</a>
+                            <a href="# ">+91 8111 85 29 56</a>
+                            <a href="# ">c.mishal46@gmail.com</a>
+                        </h3> -->
+                    </div>
+                </div>
+                <!-- <div class="professional-doctors-card ">
+                    <div class="doctors-image ">
+                        <a href="# "><img src="assets/images/doctors/doctor-1.png " alt="image "></a>
+                        <div class="add-icon ">
+                            <a href="doctors-details.html "></a>
+                        </div>
+
+                    </div>
+                    <div class="doctors-content ">
+                        <span>Director, ASA Clinics</span>
+                        <h3>
+                            <a href="# ">Dr Hafiz U.K</a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="professional-doctors-card ">
+                    <div class="doctors-image bg-f7f7f7 ">
+                        <a href="# "><img src="assets/images/doctors/doctor-1.png " alt="image "></a>
+                        <div class="add-icon ">
+                            <a href="# ">
+                        </div>
+
+                    </div>
+                    <div class="doctors-content ">
+                        <span>Director, ASA Clinics</span>
+                        <h3>
+                            <a href="# ">Dr Hafiz U.K</a>
+                        </h3>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- <section class="counter">
+        <div class="container">
+
+            <div class="row counterrow ">
+                <div class="col-sm-4 ">
+                    <div class="number ">780</div>
+                    <div class=" "><span class="iconify" data-icon="bx:bx-plus-medical" style="color: #61482f;"></span>
+                        <p>Treratment</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 ">
+                    <div class="number ">780</div>
+                    <div class=" "><span class="iconify" data-icon="emojione-monotone:hospital" style="color: #61482f;"></span>
+                        <p>Clinics</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 ">
+                    <div class="number ">780</div>
+                    <div class=" "><span class="iconify" data-icon="fontisto:bed-patient" style="color: #61482f;"></span>
+                        <p>Patients</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section> -->
+
+
+    <div class="testimonials-area ptb-100 ">
+        <div class="container ">
+            <div class="section-title ">
+                <span>Testimonials</span>
+                <h2>What Our People Say About </h2>
+            </div>
+            <div class="testimonials-slides owl-carousel owl-theme ">
+                <div class="testimonials-card-item ">
+                    <div class="image ">
+
+                        <div class="double-quotes-icon ">
+
+                        </div>
+                    </div>
+                    <div class="content ">
+                        <p>"The Doctors are well experieced, the treat is some of the best. really nice team and treatments " Omar Entreprenuer "ASA Clinics's Cupping and Hijama therapy are some od the best therapies to have. they have designated wards for
+                            both male and female sepratly..</p>
+                        <div class="info">
+                            <h3>Ahmed</h3>
+                            <span>Entreprenuer</span>
+                        </div>
+                    </div>
+                    <div class="testimonials-shape-1" data-speed="0.09" data-revert="true">
+
+                    </div>
+                </div>
+                <div class="testimonials-card-item">
+                    <div class="image">
+
+                        <div class="double-quotes-icon">
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>"The Doctors are well experieced, the treat is some of the best. really nice team and treatments" Omar Entreprenuer "ASA Clinics's Cupping and Hijama therapy are some od the best therapies to have. they have designated wards for
+                            both male and female sepratly.</p>
+                        <div class="info">
+                            <h3>Amal</h3>
+                            <span>IP</span>
+                        </div>
+                    </div>
+                    <div class="testimonials-shape-1" data-speed="0.09" data-revert="true">
+
+                    </div>
+                </div>
+                <div class="testimonials-card-item">
+                    <div class="image">
+
+                        <div class="double-quotes-icon">
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p> "The Doctors are well experieced, the treat is some of the best. really nice team and treatments" Omar Entreprenuer "ASA Clins's Cupping and Hijama therapy are some od the best therapies to have. they have designated wards for
+                            both male and female sepratly..</p>
+                        <div class="info">
+                            <h3>Omar</h3>
+                            <span>Entreprenuer </span>
+                        </div>
+                    </div>
+                    <div class="testimonials-shape-1" data-speed="0.09" data-revert="true">
+
+                    </div>
+                </div>
+                <div class="testimonials-card-item">
+                    <div class="image">
+
+                        <div class="double-quotes-icon">
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>"The Doctors are well experieced, the treat is some of the best. really nice team and treatments" Omar Entreprenuer "ASA Clinics's Cupping and Hijama therapy are some od the best therapies to have. they have designated wards for
+                            both male and female sepratly..</p>
+                        <div class="info">
+                            <h3>Ahmed</h3>
+                            <span>IP</span>
+                        </div>
+                    </div>
+                    <div class="testimonials-shape-1" data-speed="0.09" data-revert="true">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="footer-area pt-100 " style="background-color: #1A733B; ">
+        <div class="container-fluid ">
+            <div class="row justify-content-center ">
+                <div class="col-lg-3 col-md-6 ">
+                    <div class="single-footer-widget ">
+                        <div class="widget-logo ">
+                            <a href="index.html"><img src="footer-logo.svg" alt="Ocularis " width="200 " height="56 "></a>
+                        </div>
+                        <p style="font-size: 15px; ">ASA Clinics is a pioneering group of visionaries promoting authentic, natural health systems deeply embodied in tradition within the spirit of nature. </p>
+                        <div class="social">
+                            <a href=""><span class="iconify" data-icon="akar-icons:facebook-fill" style="color: #f8f8ff;" data-width="28"></span></a>
+                            <a href=""> <span class="iconify" data-icon="akar-icons:instagram-fill" style="color: #f8f8ff;" data-width="28"></span></a>
+                            <a href=""> <span class="iconify" data-icon="akar-icons:linkedin-fill" style="color: #f8f8ff;" data-width="28"></span></a>
+                            <a href=""> <span class="iconify" data-icon="akar-icons:youtube-fill" style="color: #f8f8ff;" data-width="28"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6 ">
+                    <div class="single-footer-widget ps-5 ">
+                        <h3>Pages</h3>
+                        <ul class="quick-links ">
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="index-test.html">Clinics </a>
+                            </li>
+                            <li>
+                                <a href="gallery.html">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="career.html">Career</a>
+                            </li>
+                            <!-- <li>
+                                <a href="privacy-policy.html ">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="blog.html ">News & Blog</a>
+                            </li>
+                            <li>
+                                <a href="contact.html ">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="appointment.html ">Appointment</a>
+                            </li>
+                            <li>
+                                <a href="services.html ">Our Features</a>
+                            </li>
+                            <li>
+                                <a href="services-details.html ">Cardiology</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-2 col-sm-6 ">
+                    <div class="single-footer-widget ps-5 ">
+                        <h3>Clinics</h3>
+                        <ul class="quick-links ">
+                            <li>
+                                <a href="index-test.html">ASA Clinics Narikunni</a>
+                            </li>
+                            <li>
+                                <a href="index-test.html">ASA Clinics AL AIN</a>
+                            </li>
+                            <li>
+                                <a href="index-test.html">ASA Clinics BHARUCH</a>
+                            </li>
+                            <li>
+                                <a href="index-test.html">ASA Clinics KARANTHUR</a>
+                            </li>
+                            <li>
+                                <a href="index-test.html">ASA Clinics VADODARA</a>
+                            </li>
+                            <li>
+                                <a href="index-test.html">ASA Clinics VELLAMUNDA</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div> -->
+                <!-- <div class="col-lg-3 col-sm-6 ">
+                    <div class="single-footer-widget ">
+                        <h3>News & Blog</h3>
+                        <div class="footer-widget-blog ">
+                            <article class="item ">
+                                <a href="blog-details.html " class="thumb ">
+                                    <span class="fullimage bg1 " role="img "></span>
+                                </a>
+                                <div class="info ">
+                                    <h4><a href="blog-details.html ">What You Need to Do When Preparing</a></h4>
+                                    <span><a href="blog-right-sidebar.html ">By Tianna Fuller</a></span>
+                                </div>
+                            </article>
+                            <article class="item ">
+                                <a href="blog-details.html " class="thumb ">
+                                    <span class="fullimage bg2 " role="img "></span>
+                                </a>
+                                <div class="info ">
+                                    <h4><a href="blog-details.html ">Diabetes Education Programs</a></h4>
+                                    <span><a href="blog-right-sidebar.html ">By Kendal Gay</a></span>
+                                </div>
+                            </article>
+                            <article class="item ">
+                                <a href="blog-details.html " class="thumb ">
+                                    <span class="fullimage bg3 " role="img "></span>
+                                </a>
+                                <div class="info ">
+                                    <h4><a href="blog-details.html ">Dental Hygiene for Everyone</a></h4>
+                                    <span><a href="blog-right-sidebar.html ">By Marie Jensen</a></span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-lg-2 col-sm-6 ">
+                    <div class="single-footer-widget ps-3 ">
+                        <h3>Head Branch Contact</h3>
+                        <ul class="footer-information ">
+                            <li>
+                                <i class="ri-phone-fill " style="color: #dbe7d6; font-size: 16px; "></i>
+                                <h4><a href="# ">+91 9107 050 050</a></h4>
+
+                            </li>
+
+                            <li>
+                                <i class="ri-map-pin-line " style="color: #dbe7d6; font-size: 16px; "></i>
+                                <h4>Imtibish Clinics Near Markaz Knowledge City Kannoth Post, Calicut India – 673580</h4>
+
+
+
+                            </li>
+
+
+                            <li>
+                                <i class="ri-mail-line " style="color: #dbe7d6; font-size: 16px; "></i>
+                                <h4>admin@asaclinics.com</h4>
+
+
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- <div class="col-lg-2 col-sm-6 ">
+                    <div class="single-footer-widget ps-3 ">
+                        <h3>Emails</h3>
+                        <ul class="footer-information ">
+                            <li>
+                                <i class="ic-baseline-mark-email " style="color: #6DBE4B "></i>
+                                <h4><a href="# ">info@asaclinics.com</a></h4>
+                                <span>ASA Customer Care</span>
+                            </li>
+
+                            <li>
+                                <i class="ic-baseline-mark-email-unread " style="color: #6DBE4B "></i>
+                                <h4><a href="# ">hr@asaclinics.com</a></h4>
+                                <span>ASA Clinic HR Email</span>
+                            </li>
+
+                            <li>
+                                <i class="ic-baseline-mark-email-unread " style="color: #6DBE4B "></i>
+                                <h4><a href="# ">support@asaclinics.com</a></h4>
+                                <span>ASA Clinic Support Team</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <div class="col-lg-2 col-sm-6 ">
+                    <div class="single-footer-widget ps-5 ">
+                        <h3>Working Hours</h3>
+                        <ul class="quick-links ">
+                            <li>
+                                <p>Monday — 8am – 7pm</p>
+                                <p>Tuesday — 8am – 7pm</p>
+                                <p>Wednesday — 8am – 7:30pm</p>
+                                <p>Thursday — 8am – 6:30pm</p>
+                                <p>Friday —8am – 5pm</p>
+                                <p>Saturday — 8am – 2pm</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="copyright-area ">
+            <div class="container ">
+                <div class="copyright-area-content ">
+                    <p>
+                        Copyright © 2021 ASA Clinic All Rights Reserved by
+                        <a href="# " target="_blank ">
+                            ASA Clinics
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="go-top ">
+        <i class="ri-arrow-up-s-line "></i>
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+
+    <script>
+        $(".number ").counterUp({
+            time: 3000
+        });
+    </script>
+
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js "></script>
+    <script src="assets/js/jquery.min.js "></script>
+    <script src="assets/js/bootstrap.bundle.min.js "></script>
+    <script src="assets/js/jquery.meanmenu.js "></script>
+    <script src="assets/js/owl.carousel.min.js "></script>
+    <script src="assets/js/jquery.appear.js "></script>
+    <script src="assets/js/odometer.min.js "></script>
+    <script src="assets/js/jquery.magnific-popup.min.js "></script>
+    <script src="assets/js/fancybox.min.js "></script>
+    <script src="assets/js/jquery-ui.js "></script>
+    <script src="assets/js/selectize.min.js "></script>
+    <script src="assets/js/TweenMax.min.js "></script>
+    <script src="assets/js/aos.js "></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js "></script>
+    <script src="assets/js/form-validator.min.js "></script>
+    <script src="assets/js/contact-form-script.js "></script>
+    <script src="assets/js/wow.min.js "></script>
+    <script src="assets/js/main.js "></script>
+</body>
+
+</html>

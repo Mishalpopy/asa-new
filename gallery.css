@@ -1,0 +1,164 @@
+body {
+    line-height: 1.5;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+* {
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+/*.gallery*/
+
+.gallery {
+    width: 100%;
+    display: block;
+    font-family: 'Titillium Web', sans-serif;
+    min-height: 100vh;
+    background-color: #f7f6f5;
+    padding: 100px 0;
+}
+
+.gallery .gallery-filter {
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 20px;
+}
+
+.gallery .gallery-filter .filter-item {
+    color: #000000;
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    line-height: 1.2;
+    transition: all 0.3s ease;
+}
+
+.gallery .gallery-filter .filter-item.active {
+    color: #51b447;
+    border-color: #070707;
+}
+
+.clinic-description {
+    /* background-image: url(./clinic-bg.jpeg); */
+    margin-top: 77px;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+}
+
+.clinic-description p {
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.gallery .gallery-item {
+    width: calc(100% / 3);
+    padding: 15px;
+}
+
+
+/* .gallery #shoe,
+.gallery #shoe img {
+    width: 100%x;
+    height: 100%;
+    margin-bottom: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.gallery #head,
+.gallery #head img {
+    width: 304px;
+    height: 535px;
+    margin-bottom: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.gallery #camera,
+.gallery #camera img {
+    width: 404px;
+    height: 635px;
+    margin-bottom: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.gallery #camera,
+.gallery #camera img {
+    width: 404px;
+    height: 585px;
+    margin-bottom: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+} */
+
+.gallery .gallery-item-inner img {
+    width: 100%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.gallery .gallery-item.show {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.gallery .gallery-item.hide {
+    display: none;
+}
+
+
+/*responsive*/
+
+@media(max-width: 991px) {
+    .gallery .gallery-item {
+        width: 50%;
+    }
+}
+
+@media(max-width: 767px) {
+    .gallery .gallery-item {
+        width: 100%;
+    }
+    .gallery .gallery-filter .filter-item {
+        margin-bottom: 10px;
+    }
+}
